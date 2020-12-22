@@ -109,6 +109,9 @@ public class FileController {
         }
         log.info("分片结束了");
         //告诉java虚拟机去回收垃圾 至于什么时候回收 这个取决于 虚拟机的决定
+
+
+
         System.gc();
         //等待100毫秒 等待垃圾回收去 回收完垃圾
         Thread.sleep(100);
